@@ -5,19 +5,19 @@
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Shrikhand&display=swap" rel="stylesheet"> 
+       <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
        <script src="https://kit.fontawesome.com/f39b9f5659.js" crossorigin="anonymous"></script>
        <link rel="stylesheet" href="Sass/style.css">
        <title>Accueil - ohmyfood!</title>
    </head>
    <body>
        <div class="load">
-           <div class="spinner-1"></div>
-           <div class="spinner-2"></div>
-           <div class="spinner-3">LOADING</div>
+           <div class="load__spinner-1"></div>
+           <div class="load__spinner-2"></div>
+           <div class="load__texteLoad">LOADING</div>
        </div>
        <header class="headerAccueil">
-           <h1>ohmyfood</h1>
+           <h1 class="headerAccueil__titre">ohmyfood</h1>
        </header>
        <main>
            <section class="placeRest">
@@ -25,12 +25,12 @@
                 <h3 class="placeRest__texte">Paris, Bellevile</h3>
            </section>
            <section class="reserve">
-                <h2 class="reserve__titre">Réservez le menu qui vous convient</h2>
+                <h3 class="reserve__titre">Réservez le menu qui vous convient</h3>
                 <p class="reserve__text">Découvrez des restaurants d'éxcéption, sélectionés par nos soins</p>
                 <div class="reserve__btn">Explorer nos restaurants</div>
            </section>
            <section class="fonct">
-               <h2 class="fonct__titre">Fonctionnement</h2>
+               <h3 class="fonct__titre">Fonctionnement</h3>
                <div class="fonct__alignement">
                    <div class="fonct__ligne">
                        <div class="fonct__ligne__num">1</div>
@@ -49,64 +49,64 @@
                     </div>
                </div>
            </section>
-           <section class="sectionRest">
-                <h2 class="sectionRest__titre">Restaurants</h2>
-                <div class="sectionRest__alignement">
-                <div class="restCarte">
-                    <a href="">
-                    <img src="img/la-palette-du-gout.jpg" alt="La palette du goût" class="restCarte__img">
-                    <div class="restCarte__btn">Nouveau</div>
-                    <div class="restCarte__info">
-                        <h3 class="restCarte__info__nom">La palette du goût</h3>
-                        <p class="restCarte__info__place">Ménilmontant</p>
-                        <div class="restCarte__info__icone1v"><i class="far fa-heart fa-lg "></i></div>
-                        <div class="restCarte__info__icone2"><i class="fas fa-heart fa-lg "></i></div>
+           <section class="restSection">
+                <h3 class="restSection__titre">Restaurants</h3>
+                <div class="restSection__alignement">
+                    <div class="restCarte">
+                       <a href="la-palette-du-gout.html">
+                       <img src="img/la-palette-du-gout.jpg" alt="La palette du goût" class="restCarte__img">
+                       <div class="restCarte__btn">Nouveau</div>
+                       <div class="restCarte__info">
+                           <h4 class="restCarte__info__nom">La palette du goût</h4>
+                           <p class="restCarte__info__place">Ménilmontant</p>
+                           <div class="restCarte__info__iconeHeart1"><i class="far fa-heart fa-lg "></i></div>
+                           <div class="restCarte__info__iconeHeart2"><i class="fas fa-heart fa-lg "></i></div>
+                       </div>
+                       </a>
+                   </div>
+                   <div class="restCarte"> 
+                       <a href="la-note-enchantee.html">
+                        <img src="img/la-note-enchantée.jpg" alt="La note enchantée" class="restCarte__img">
+                        <div class="restCarte__btn">Nouveau</div>
+                        <div class="restCarte__info">
+                            <h4 class="restCarte__info__nom">La note enchantée</h4>
+                            <p class="restCarte__info__place">Charonne</p>
+                            <div class="restCarte__info__iconeHeart1"><i class="far fa-heart fa-lg "></i></div>
+                            <div class="restCarte__info__iconeHeart2"><i class="fas fa-heart fa-lg "></i></div>
+                        </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div class="restCarte"> 
-                    <a href="">
-                    <img src="img/la-note-enchantée.jpg" alt="La note enchantée" class="restCarte__img">
-                    <div class="restCarte__btn">Nouveau</div>
-                    <div class="restCarte__info">
-                        <h3 class="restCarte__info__nom">La note enchantée</h3>
-                        <p class="restCarte__info__place">Charonne</p>
-                        <div class="restCarte__info__icone1v"><i class="far fa-heart fa-lg "></i></div>
-                        <div class="restCarte__info__icone2"><i class="fas fa-heart fa-lg "></i></div>
+                    <div class="restCarte">
+                        <a href="a-la-francaise.html">
+                        <img src="img/a-la-francaise.jpg" alt="À la française" class="restCarte__img">
+                        <div class="restCarte__info"> 
+                            <h4 class="restCarte__info__nom">À la française</h4>
+                            <p class="restCarte__info__place">Cité Rouge</p>
+                            <div class="restCarte__info__iconeHeart1"><i class="far fa-heart fa-lg "></i></div>
+                            <div class="restCarte__info__iconeHeart2"><i class="fas fa-heart fa-lg "></i></div>
+                        </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div class="restCarte">
-                    <a href="">
-                    <img src="img/a-la-francaise.jpg" alt="À la française" class="restCarte__img">
-                    <div class="restCarte__info"> 
-                        <h3 class="restCarte__info__nom">À la française</h3>
-                        <p class="restCarte__info__place">Cité Rouge</p>
-                        <div class="restCarte__info__icone1v"><i class="far fa-heart fa-lg "></i></div>
-                        <div class="restCarte__info__icone2"><i class="fas fa-heart fa-lg "></i></div>
+                    <div class="restCarte">
+                        <a href="le-delice-des-sens.html">
+                        <img src="img/le-delice-des-sens.jpg" alt="Le délice des sens" class="restCarte__img">
+                        <div class="restCarte__info">
+                            <h4 class="restCarte__info__nom">Le délice des sens</h4>
+                            <p class="restCarte__info__place">Folie-Méricourt</p>
+                            <div class="restCarte__info__iconeHeart1"><i class="far fa-heart fa-lg "></i></div>
+                            <div class="restCarte__info__iconeHeart2"><i class="fas fa-heart fa-lg "></i></div>
+                        </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div class="restCarte">
-                    <a href="">
-                    <img src="img/le-delice-des-sens.jpg" alt="Le délice des sens" class="restCarte__img">
-                    <div class="restCarte__info">
-                        <h3 class="restCarte__info__nom">Le délice des sens</h3>
-                        <p class="restCarte__info__place">Folie-Méricourt</p>
-                        <div class="restCarte__info__icone1v"><i class="far fa-heart fa-lg "></i></div>
-                        <div class="restCarte__info__icone2"><i class="fas fa-heart fa-lg "></i></div>
-                    </div>
-                    </a>
-                </div>
-            </div>
+               </div>
            </section>
         </main>
         <footer class="footer">
-                <h3 class="footer__titre">ohmyfood</h3>
-                <a href=""><i class="fas fa-utensils fa-ms footer__icone"></i> <span class="footer__texte"> Proposer un restaurant</span></a>
-                <a href=""><i class="fas fa-hands-helping fa-xs footer__icone"></i> <span class="footer__texte"> Devenir partenaire</span></a>
-                <a href="" class="footer__texte">Mentions légales</a>
-                <a href="" class="footer__texte">Contact</a>
+            <h2 class="footer__titre">ohmyfood</h2>
+            <a href="#"><i class="fas fa-utensils fa-ms footer__icone"></i> <span class="footer__texte"> Proposer un restaurant</span></a>
+            <a href="#"><i class="fas fa-hands-helping fa-xs footer__icone"></i> <span class="footer__texte"> Devenir partenaire</span></a>
+            <a href="#" class="footer__texte">Mentions légales</a>
+            <a href="mailto:contact@ohmyfood.fr" class="footer__texte">Contact</a>
         </footer>
     </body>
 </html>   
