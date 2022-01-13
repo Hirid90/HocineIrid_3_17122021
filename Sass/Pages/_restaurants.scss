@@ -43,16 +43,19 @@
         }
         &__iconeHeart1{
             position: absolute;
+            cursor: pointer;
             right: 10%;
         }
         &__iconeHeart2{
             position: absolute;
             right: 10%;
+            cursor: pointer;
             color: transparent;
+	        background: linear-gradient(150deg, $couleur-secondaire 0%, $couleur-primaire 100%);
             background-clip: text;
-	        background-image: linear-gradient(150deg, $couleur-secondaire 0%, $couleur-primaire 100%);
-            transition: opacity 400ms ease-in-out;
+            -webkit-background-clip: text;
             opacity: 0;
+            transition: opacity 400ms ease-in-out;
             &:hover{
                 opacity: 1;
             }
