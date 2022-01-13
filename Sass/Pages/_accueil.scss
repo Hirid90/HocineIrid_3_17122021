@@ -177,9 +177,11 @@
             background-clip: text;
             -webkit-background-clip: text;
             opacity: 0;
-            transition: opacity 300ms ease-in-out;
+            transform: scale(1);
+            transition: opacity 200ms ease-in-out;
             &:hover{
                 opacity: 1;
+                transform: scale(1.1);
             }
         }
     }

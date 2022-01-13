@@ -465,12 +465,16 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  -webkit-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .restCarte__info__iconeHeart2:hover {
   opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 /*footer*/
@@ -586,12 +590,16 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: opacity 400ms ease-in-out;
   transition: opacity 400ms ease-in-out;
 }
 
 .sectionRest__entete__iconeHeart2:hover {
   opacity: 1;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .sectionRest__btn {
